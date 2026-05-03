@@ -271,9 +271,6 @@ static void OOP()
             Console.WriteLine($"{pet}");
         }
     }
-    {
-        
-    }
 
 
 }
