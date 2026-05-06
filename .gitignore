@@ -433,3 +433,5 @@ FodyWeavers.xsd
 # Netbrains specific 
 
 .idea/
+
+*/publish*

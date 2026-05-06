@@ -1,4 +1,5 @@
 ﻿
+using System.Diagnostics;
 using BeginnerLearning;
 
 // Basics on Strings
@@ -271,7 +272,35 @@ static void OOP()
             Console.WriteLine($"{pet}");
         }
     }
+    
+}
 
+static void Files()
+{
+
+    // IEnumerable<string> directories = Directory.EnumerateDirectories(@"C:\Users\Drew\Documents");
+    //
+    // foreach (var directory in directories)
+    //     Console.WriteLine(directory);
+    // {
+    //     
+    // }
+    //
+    // IEnumerable<string> files = Directory.EnumerateFiles(@"C:\Users\Drew\Documents");
+    //
+    // foreach (var file in files)
+    //     Console.WriteLine(file);
+    // {
+    //     
+    // }
+    
+    IEnumerable<string> directoriesRecursice = Directory.EnumerateDirectories(@"C:\Users\Drew\Documents", "*", SearchOption.AllDirectories);
+
+    foreach (var directory in directoriesRecursice)
+        Console.WriteLine(directory);
+    {
+        
+    }
 
 }
 
@@ -280,4 +309,5 @@ static void OOP()
 // Numbers();
 // Branching();
 // Lists();
-OOP();
+// OOP();
+Files();

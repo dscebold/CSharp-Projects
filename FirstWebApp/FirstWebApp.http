@@ -1,0 +1,41 @@
+@FirstWebApp_HostAddress = http://localhost:5257
+
+GET {{FirstWebApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{FirstWebApp_HostAddress}}/pizza/
+Accept: application/json
+
+###
+
+GET {{FirstWebApp_HostAddress}}/pizza/3
+Accept: application/json
+
+###
+
+POST {{FirstWebApp_HostAddress}}/pizza/
+Content-Type: application/json
+
+{
+  "name": "Hawaii",
+  "isGlutenFree": false
+}
+
+###
+
+PUT {{FirstWebApp_HostAddress}}/pizza/3
+Content-Type: application/json
+
+{
+  "id": 3,
+  "name": "Hawaiian",
+  "isGlutenFree": false
+}
+
+###
+
+DELETE {{FirstWebApp_HostAddress}}/pizza/4
+
+###
